@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042DCA59253550E90073341E /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042DCA58253550E90073341E /* ProductListVC.swift */; };
 		04591FB12533FB3800144C28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04591FB02533FB3800144C28 /* AppDelegate.swift */; };
 		04591FB32533FB3800144C28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04591FB22533FB3800144C28 /* SceneDelegate.swift */; };
 		04591FB52533FB3800144C28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04591FB42533FB3800144C28 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042DCA58253550E90073341E /* ProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
 		04591FAD2533FB3800144C28 /* Beauty store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beauty store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04591FB02533FB3800144C28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04591FB22533FB3800144C28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				04591FB92533FB3A00144C28 /* Assets.xcassets */,
 				04591FBB2533FB3A00144C28 /* LaunchScreen.storyboard */,
 				04591FBE2533FB3A00144C28 /* Info.plist */,
+				042DCA58253550E90073341E /* ProductListVC.swift */,
 			);
 			path = "Beauty store";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042DCA59253550E90073341E /* ProductListVC.swift in Sources */,
 				04591FB52533FB3800144C28 /* ViewController.swift in Sources */,
 				04591FB12533FB3800144C28 /* AppDelegate.swift in Sources */,
 				04591FB32533FB3800144C28 /* SceneDelegate.swift in Sources */,

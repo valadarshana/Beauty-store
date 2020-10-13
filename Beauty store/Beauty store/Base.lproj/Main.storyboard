@@ -47,7 +47,7 @@
                                 <rect key="frame" x="16" y="174" width="382" height="668"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="382" id="FUM-nd-pJr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductListVC" rowHeight="382" id="FUM-nd-pJr" customClass="ProductListVC" customModule="Beauty_store" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="382" height="382"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FUM-nd-pJr" id="F3N-Sr-wHz">
@@ -82,11 +82,14 @@
                                                         </stackView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjp-Mf-iwh">
                                                             <rect key="frame" x="226" y="230" width="100" height="50"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="9i4-iM-lRS"/>
                                                                 <constraint firstAttribute="width" constant="100" id="T2q-BM-3Kd"/>
                                                             </constraints>
-                                                            <state key="normal" title="Button"/>
+                                                            <state key="normal" title="Share">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -110,6 +113,12 @@
                                                 <constraint firstItem="mOR-nz-RSe" firstAttribute="leading" secondItem="F3N-Sr-wHz" secondAttribute="leadingMargin" id="ww8-Rj-Pvu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnShare" destination="Tjp-Mf-iwh" id="XxN-pm-WJF"/>
+                                            <outlet property="imgProduct" destination="PXR-EC-2Wm" id="xkF-xQ-BSN"/>
+                                            <outlet property="lblDesc" destination="hZm-d9-EiY" id="XjC-a0-PdO"/>
+                                            <outlet property="lblProductName" destination="O9i-Tb-aCt" id="UIe-WT-rLq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -133,12 +142,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="searchView" destination="f3X-bC-VuH" id="S6c-Vn-2x1"/>
+                        <outlet property="tblItrm" destination="SH3-ga-kOM" id="Pla-Ag-S2K"/>
                         <outlet property="txtSearch" destination="QQN-KV-LLC" id="umr-GG-IgM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
+            <point key="canvasLocation" x="819" y="18"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="np6-E0-i8N">
@@ -160,7 +170,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxD-NM-bLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+            <point key="canvasLocation" x="132" y="68"/>
         </scene>
     </scenes>
     <resources>
