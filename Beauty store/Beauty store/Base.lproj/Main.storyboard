@@ -22,6 +22,9 @@
                                         <rect key="frame" x="55" y="0.0" width="327" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="editingChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="ty1-gy-7lh"/>
+                                        </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VhL-qk-w7T">
                                         <rect key="frame" x="10" y="6" width="40" height="38"/>
@@ -43,11 +46,11 @@
                                     <constraint firstAttribute="height" constant="50" id="va5-JO-puK"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SH3-ga-kOM">
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SH3-ga-kOM">
                                 <rect key="frame" x="16" y="174" width="382" height="668"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductListVC" rowHeight="382" id="FUM-nd-pJr" customClass="ProductListVC" customModule="Beauty_store" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProductListVC" rowHeight="382" id="FUM-nd-pJr" customClass="ProductListVC" customModule="Beauty_store" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="382" height="382"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FUM-nd-pJr" id="F3N-Sr-wHz">
@@ -55,25 +58,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOR-nz-RSe">
-                                                    <rect key="frame" x="20" y="11" width="342" height="360"/>
+                                                    <rect key="frame" x="20" y="19" width="342" height="344"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PXR-EC-2Wm">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="PXR-EC-2Wm">
                                                             <rect key="frame" x="0.0" y="0.0" width="342" height="150"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="150" id="8UP-r7-gWq"/>
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="U5d-6D-cjr">
-                                                            <rect key="frame" x="16" y="170" width="205" height="170"/>
+                                                            <rect key="frame" x="16" y="170" width="205" height="154"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bold &amp; Beautiful store.ltd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9i-Tb-aCt">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="205" height="80"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="205" height="72"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="get somthing speacial from our Shop Beautiful store.ltd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZm-d9-EiY">
-                                                                    <rect key="frame" x="0.0" y="90" width="205" height="80"/>
+                                                                    <rect key="frame" x="0.0" y="82" width="205" height="72"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -81,7 +84,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjp-Mf-iwh">
-                                                            <rect key="frame" x="226" y="230" width="100" height="50"/>
+                                                            <rect key="frame" x="226" y="222" width="100" height="50"/>
                                                             <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="9i4-iM-lRS"/>
@@ -107,17 +110,19 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="mOR-nz-RSe" firstAttribute="top" secondItem="F3N-Sr-wHz" secondAttribute="topMargin" id="6ff-fS-WV6"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="mOR-nz-RSe" secondAttribute="bottom" id="JYN-Jn-TT0"/>
+                                                <constraint firstItem="mOR-nz-RSe" firstAttribute="top" secondItem="F3N-Sr-wHz" secondAttribute="topMargin" constant="8" id="6ff-fS-WV6"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mOR-nz-RSe" secondAttribute="bottom" constant="8" id="JYN-Jn-TT0"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="mOR-nz-RSe" secondAttribute="trailing" id="Tni-Mw-ZWd"/>
                                                 <constraint firstItem="mOR-nz-RSe" firstAttribute="leading" secondItem="F3N-Sr-wHz" secondAttribute="leadingMargin" id="ww8-Rj-Pvu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="btnShare" destination="Tjp-Mf-iwh" id="XxN-pm-WJF"/>
                                             <outlet property="imgProduct" destination="PXR-EC-2Wm" id="xkF-xQ-BSN"/>
                                             <outlet property="lblDesc" destination="hZm-d9-EiY" id="XjC-a0-PdO"/>
                                             <outlet property="lblProductName" destination="O9i-Tb-aCt" id="UIe-WT-rLq"/>
+                                            <outlet property="viewContent" destination="mOR-nz-RSe" id="zez-wM-RO0"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -174,6 +179,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="img1" width="600" height="286"/>
         <image name="lessthan.circle.fill" catalog="system" width="64" height="60"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>

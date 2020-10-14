@@ -12,11 +12,17 @@ class ProductListVC: UITableViewCell {
     @IBOutlet weak var imgProduct: UIImageView!
     
     @IBOutlet weak var lblProductName: UILabel!
+     @IBOutlet weak var viewContent: UIView!
 
     @IBOutlet weak var btnShare: UIButton!
     @IBOutlet weak var lblDesc: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        viewContent.layer.cornerRadius=8
+        btnShare.layer.cornerRadius=8
+        
+        viewContent.clipsToBounds=true // View bound its boundry
+        
         // Initialization code
     }
 

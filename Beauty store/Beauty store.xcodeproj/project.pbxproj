@@ -104,11 +104,11 @@
 				04591FB02533FB3800144C28 /* AppDelegate.swift */,
 				04591FB22533FB3800144C28 /* SceneDelegate.swift */,
 				04591FB42533FB3800144C28 /* ViewController.swift */,
+				042DCA58253550E90073341E /* ProductListVC.swift */,
 				04591FB62533FB3800144C28 /* Main.storyboard */,
 				04591FB92533FB3A00144C28 /* Assets.xcassets */,
 				04591FBB2533FB3A00144C28 /* LaunchScreen.storyboard */,
 				04591FBE2533FB3A00144C28 /* Info.plist */,
-				042DCA58253550E90073341E /* ProductListVC.swift */,
 			);
 			path = "Beauty store";
 			sourceTree = "<group>";
@@ -438,14 +438,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q75B9P5QF8;
 				INFOPLIST_FILE = "Beauty store/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Beauty-store";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pk.aa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,14 +459,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q75B9P5QF8;
 				INFOPLIST_FILE = "Beauty store/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Beauty-store";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pk.aa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
