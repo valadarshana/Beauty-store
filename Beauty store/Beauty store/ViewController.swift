@@ -53,12 +53,15 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         return cell
     }
     @objc func btn_click(_ sender:UIButton){
+        
+        //Code to share Message  Link and String
         let txtShare = objProduct[sender.tag].productName
         let myWebSite = URL(string:"https://www.apple.com")
         let shareAll = [txtShare!,myWebSite!]as! [Any]
-        
         let vc = UIActivityViewController(activityItems: shareAll, applicationActivities: nil)
         self.present(vc, animated: true, completion: nil)
+        
+        
     }
     
   
